@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+*{
+  font-family: 'Dosis', sans-serif;
+  font-family: 'Roboto', sans-serif; 
+  font-family: 'Nunito',sans-serif;
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: .2s linear;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+section{
+  padding: 2rem 9%;
+}
+
+/* header */
+
+.header{
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 9%;
+  z-index: 2;
+}
+
+.header .logo img{
+  height: 6rem;
+}
+
+.header .navbar #close{
+  display: none;
+  position: absolute;
+  top: 4rem;
+  right: 2rem;
+  cursor: pointer;
+  font-size: 3rem;
+  color: #fff;
+}
+
+.header .navbar a{
+  font-size: 2rem;
+  margin-right: 2rem;
+  color: #fff;
+}
+
+.header .navbar a:hover{
+  color: #d3ad7f;
+}
+
+.header #menu{
+  display: none;
+  cursor: pointer;
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+/* ends */
+
+/* home */
+
+.home{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: #2a201c;
+}
+
+.home .content{
+  flex: 1 1 40rem;
+  padding-top: 6.5rem;
+}
+
+.home .content .title{
+  font-size: 6rem;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.home .content .title span{
+  text-transform: uppercase;
+  color: #d3ad7f;
+}
+
+.home .content .description{
+  font-size: 2rem;
+  font-weight: lighter;
+  line-height: 1.8;
+  padding: 1rem 0;
+  color: #fff;
+}
+
+.home .content .btn{
+  margin-top: 1rem;
+  display: inline-block;
+  padding: .9rem 3rem;
+  font-size: 1.7rem;
+  color: #fff;
+  background: #d3ad7f;
+  cursor: pointer;
+}
+
+.home .content .btn:hover{
+  letter-spacing: .2rem;
+}
+
+.home .image{
+  flex: 1 1 40rem;
+} 
+
+.home .image img{
+  width: 100%;
+}
+
+/* end */
+
+@media (max-width:991px){
+  html{
+    font-size: 55%;
+  }
+
+  .header{
+    padding: 2rem;
+  }
+
+  section{
+    padding: 2rem;
+  }
+
+}
+
+@media (max-width:768px){
+
+  .header #menu{
+    display: inline-block;
+  }
+
+  .header .navbar{
+    position: fixed;
+    top: 0; right: -105%;
+    width: 30rem;
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(50px);
+    transition: .5s;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    z-index: 1200;
+  }
+
+  .header .navbar.active{
+    right: 0;
+  }
+
+  .header .navbar #close{
+    display: block;
+  }
+
+  .header .navbar a{
+    display: block;
+    margin: 1rem 0;
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  .home .content{
+    padding-top: 9.5rem;
+  }
+
+  .home .image img{
+    width: 368px;
+  } 
+
+  .home .content .title{
+    font-size: 4rem;
+  }
+
+  .home .content .description{
+    font-size: 1.6rem;
+  }
+
+}
+
+@media (max-width:450px){
+  html{
+    font-size: 50%;
+  }
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    max-width: 80vw;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.navbar{
+    display: flex;
+    height: 67px;
+}
+.navbar li{
+    list-style: none;
+    margin: 0 12px;
+}
+
+.topleft{
+    width: 50%;
+}
+
+.topright{ 
+    width: 50%;
+}
+
+.section1{
+   max-height: 100vh; 
+   color: #711e15;
+}
+
+.section1 h1{
+    color: #37110d;
+    font-size: 2rem;
+}
+
+.logo{
+    font-size: 1.3rem;
+}
+
+.dumbellimg{
+    width: 289px;
+}
+
+.topright .gymimg{
+    width: 466px;
+}
+
+.section2{
+    padding: 73px;
+}
+
+.section2 h1{
+    font-size: 2.3rem;
+}
+
+.section2 p{
+    padding: 0 8vw;
+    text-align: center;
+}
+
+.box{
+    padding: 8px 0;
+    margin: 12px 22px;
+    min-width: 20vw;
+    border: 2px solid rgb(120, 54, 16);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.box h2{
+    font-size: 2rem;
+    padding: 15px 0;
+}
+
+.highlighted{
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+.box ul{
+    list-style-type: none;
+}
+
+.box ul li{
+   margin: 12px 2px;
+}
+
+.plantable{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+.about{
+  height: 100vh;
+  width: 100%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about .main img{
+  width: 580px;
+  max-width: 100%;
+  height: auto;
+  padding: 0 10px;
+}
+.all-text{
+  width: 600px;
+  max-width: 100%;
+  padding: 0 10px;
+}
+.main{
+  width: 1290px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: center;
+  align-items: center;
+  justify-content: space-around;
+}
+.all-text h3{
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  color: #777777;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.all-text h4{
+  font-family: 'Dosis', sans-serif;
+  font-size: 25px;
+  color: #111111;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.all-text p{
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #777777;
+  line-height: 30px;
+  margin-bottom: 35px;
+}
+.btn button{
+  background: white;
+  padding: 20px 32px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #111111;
+  border: none;
+  outline: none;
+  box-shadow: 0px 16px 32px 0px rgb(0 0 0 / 6%);
+  margin-right: 20px;
+}
+.btn button:hover{
+  background-color: #1d44f9;
+  color: white;
+  transition: .3s;
+  cursor: pointer;
+}
+.btn .btn2{
+  background: #111111;
+  color: white;
+}
+@media screen and (max-width: 1250px) {
+  .about{
+    width: 100%;
+    height: auto;
+    padding: 60px 0;
+  }
+  .all-text{
+    text-align: center;
+    margin-top: 40px;
+  } 
+}
+@media screen and (max-width: 650px){
+  .about .main img{
+    margin-bottom: 35px;
+  }
+  .all-text h1{
+    font-size: 45px;
+    margin-bottom: 20px;
+  }
+}

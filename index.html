@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snehal's Cafe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- custom css file -->
+    <link rel="stylesheet" href="style.css">
+    <script src="timer.js"></script>
+    <link rel="stylesheet" href="utils.css">
+</head>
+<body>
+
+    
+    <!-- header section starts -->
+
+    <header class="header">
+
+        <a href="#" class="logo">
+            <img src="images/logo.png" alt="">
+        </a>
+
+        <nav class="navbar">
+            <div id="close" class="fas fa-times"></div>
+
+            <a href="#" class="nav_item">home</a>
+            <a href="#" class="nav_item">about</a>
+            <a href="#" class="nav_item">menu</a>
+            <a href="#" class="nav_item">contact</a>
+
+        </nav>
+
+        <div id="menu" class="fas fa-bars"></div>
+
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- home section starts -->
+
+    <section class="home">
+
+        <div class="content">
+            <h1 class="title">fresh <span>coffee</span> in the <span>morning</span> </h1>
+            <p class="description">Indulge in the Finest Brews and Delights at Our Charming Café</p>
+            <a href="#" class="btn">get started</a>
+        </div>
+
+        <div class="image">
+            <img src="images/home.png" alt="" data-speed="-3" class="move">
+        </div>
+
+    </section>
+    <hr>
+    <section class="section2">
+        <h1 class="text-center my-2">Pricing</h1>
+        <p class="my-2">At our café, we believe in providing exceptional value for your money. We have carefully curated our pricing to ensure that you can savor our delectable offerings without breaking the bank. From our rich, aromatic coffees to our freshly baked pastries and hearty sandwiches, we offer an array of affordable options that cater to every taste and budget. Whether you're stopping by for a quick pick-me-up or planning a leisurely brunch with friends, our competitive prices ensure that you can enjoy a memorable café experience without compromising on quality. Discover the perfect balance of taste and affordability at our café, where every visit is an opportunity to indulge without guilt.</p>
+        <div class="boxes flex justify-center">
+            <div class="box">
+                <h2>Hot</h2>
+                <ul>
+                    <li class="highlighted">₹500/below</li>
+                    <li>Americano</li>
+                    <li>Expresso</li>
+                    <li>Cappuccino</li>
+                    <li>Cafe Late</li>
+                    <li><button class="btn">Explore</button></li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>Desserts</h2>
+                <ul>
+                    <li class="highlighted">₹350/above</li>
+                    <li>Ice Cream</li>
+                    <li>Apple Pie</li>
+                    <li>Desserts Nachos</li>
+                    <li>Triple Chocolate</li>
+                    <li><button class="btn">Explore</button></li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>Cold</h2>
+                <ul>
+                    <li class="highlighted">₹400/below</li>
+                    <li>Smoothie</li>
+                    <li>Frozen Latte</li>
+                    <li>Mocha</li>
+                    <li>Iced Latte</li>
+                    <li><button class="btn">Explore</button></li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+    <hr>
+    <section class="about">
+        <div class="main">
+            <img src="images/about2.png ">
+            <div class="all-text">
+            <h3>About Us</h3>
+            <h4>Bringing people together through the love of good food, great coffee, and a warm, inviting atmosphere.</h4>
+            <p>At our café, we are passionate about creating an unforgettable experience for our valued customers. From the moment you step through our doors, you'll be greeted with a warm and inviting atmosphere that exudes comfort and relaxation. We take pride in serving exceptional coffee sourced from the finest beans, expertly brewed to perfection by our skilled baristas. Our menu is crafted with care, offering a delightful selection of freshly prepared dishes made from high-quality ingredients. Whether you're seeking a cozy spot to catch up with friends, a peaceful corner to work or study, or simply a place to unwind and indulge in delicious treats, our café is the perfect destination. We strive to create a sense of community, where conversations flow freely, laughter fills the air, and memories are made. Join us and discover a haven for coffee lovers and food enthusiasts alike.</p>
+            <div class="btn">
+              <button type="button">Our Team</button>
+              <button type="button" class="btn2">Learn More</button>    
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- home section ends -->
+
+
+
+
+    <!-- GSAP CDN Link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+
+    <!-- custom js file -->
+    <script src="script.js"></script>
+</body>
+</html>
